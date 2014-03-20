@@ -52,7 +52,7 @@
   background-color: #141d17;
 }
 
-.variable.parameter.function, .meta.class.body, .meta.method.body {
+.variable.parameter.function, .meta.class.body, .meta.method.body, .meta.method, .meta.method-call {
   color: #637d75;
 }
 
@@ -62,6 +62,10 @@
 
 .punctuation.definition.string, .punctuation.definition.variable, .punctuation.definition.string, .punctuation.definition.parameters, .punctuation.definition.array, .punctuation.definition.tag, .punctuation.definition.method-parameters {
   color: #637d75;
+}
+
+.punctuation.definition.seperator.key-value, .punctuation.terminator {
+  color: #00a9df;
 }
 
 .punctuation.definition.structure {
@@ -80,7 +84,7 @@
   color: #637d75;
 }
 
-.variable, .meta.definition.variable.name, .meta.method-call {
+.variable, .meta.definition.variable.name {
   color: #2f7e25;
 }
 
@@ -96,11 +100,20 @@
   color: #73f990;
 }
 
-.keyword.other.special-method, .meta.method {
-  color: #18e000;
+.keyword.other.special-method {
+  color: #637d75;
 }
 
-.storage {
+.variable.parameter {
+  text-decoration: underline;
+  color: #2f7e25;
+}
+
+.storage, .storage.type.def {
+  color: #31497e;
+}
+
+.storage.modifier.import, .storage.modifier.package {
   color: #637d75;
 }
 
@@ -125,12 +138,16 @@
   color: #73f990;
 }
 
-.constant {
+.constant.language {
+  color: #637d75;
+}
+
+.constant.other.groovy, .constant.other.java {
   text-decoration: underline;
   color: #df8008;
 }
 
-.constant.other.name.xml {
+.constant.other.key {
   color: #637d75;
 }
 
