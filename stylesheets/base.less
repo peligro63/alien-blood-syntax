@@ -5,18 +5,23 @@
   color: @syntax-text-color;
 }
 
-.editor .gutter {
+.editor {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
+.gutter {
+  background-color: lighten(@syntax-background-color, 4%);
+}
+
 .editor .gutter .line-number.cursor-line {
-  background-color: @syntax-gutter-background-color-selected;
-  color: @syntax-gutter-text-color-selected;
+  background-color: darken(@syntax-text-color, 28%);
+  color: lighten(@syntax-text-color, 20%);
 }
 
 .editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
+  color: lighten(@syntax-text-color, 20%);
 }
 
 .editor .wrap-guide {
@@ -48,7 +53,11 @@
   background-color: @syntax-selection-color;
 }
 
-.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+.editor.is-focused, .editor.is-focused  {
+  background-color: lighten(@syntax-background-color, 2%);
+}
+
+.line.cursor-line, .line-number.cursor-line-no-selection {
   background-color: #141d17;
 }
 
