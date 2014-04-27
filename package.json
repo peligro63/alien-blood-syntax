@@ -1,11 +1,16 @@
 {
-  "name": "alien-blood",
+  "name": "alien-blood-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
-  "repository": "https://github.com/atom/alien-blood",
+  "description": "Alien Blood Syntax theme for Atom",
+  "repository": "https://github.com/zdj/alien-blood-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
-  }
+    "atom": ">=0.92.0"
+  },
+  "private": true,
+  "author": {
+    "name": "zdj",
+    "url": "https://github.com/zdj"
+  }  
 }
