@@ -110,6 +110,16 @@
   color: #18e000;
 }
 
+span.storage.modifier.static.groovy + span, span.storage.type.def.groovy + span, span.storage.type.groovy + span {
+    .meta.method.groovy {
+        color: #18e000;
+    }
+}
+
+span.meta.method-call.groovy {
+    color: #2f7e25;
+}
+
 .storage.type.annotation {
   color: #73f990;
 }
@@ -151,7 +161,7 @@
   color: #637d75;
 }
 
-.constant.other.groovy, .constant.other.java {
+.constant.other.groovy, .constant.other.java, .constant.variable.groovy, .constant.variable.java  {
   text-decoration: underline;
   color: #df8008;
 }
@@ -247,8 +257,12 @@
   color: #707f23;
 }
 
-.punctuation.section.embedded, .variable.interpolation {
+.punctuation.section.embedded, .variable.interpolation, .punctuation.definition.seperator.parameter.groovy {
   color: #637d75;
+}
+
+.meta.structure.groovy {
+    color: #2f7e25;
 }
 
 .invalid.illegal {
