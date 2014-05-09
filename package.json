@@ -1,7 +1,7 @@
 {
   "name": "alien-blood-syntax",
   "theme": "syntax",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Alien Blood Syntax theme for Atom",
   "repository": "https://github.com/zdj/alien-blood-syntax",
   "license": "MIT",
