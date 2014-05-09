@@ -1,27 +1,13 @@
 @import "syntax-variables";
 
-.editor {
-  background-color: @syntax-background-color;
+.editor .editor-colors {
   color: @syntax-text-color;
-}
-
-.editor {
-  background-color: @syntax-gutter-background-color;
-  color: @syntax-gutter-text-color;
+  background-color: @syntax-background-color;
 }
 
 .gutter {
-  background-color: lighten(@syntax-background-color, 4%);
-}
-
-.editor .gutter .line-number.cursor-line {
-  background-color: darken(@syntax-text-color, 28%);
-  color: lighten(@syntax-text-color, 20%);
-}
-
-.editor .gutter .line-number.cursor-line-no-selection {
-  color: @syntax-gutter-text-color-selected;
-  color: lighten(@syntax-text-color, 20%);
+  color: @syntax-gutter-text-color;
+  background-color: @syntax-gutter-background-color;
 }
 
 .editor .wrap-guide {
@@ -37,8 +23,8 @@
 }
 
 .editor .search-results .marker .region {
-  background-color: transparent;
   border: @syntax-result-marker-color;
+  background-color: transparent;
 }
 
 .editor .search-results .marker.current-result .region {
@@ -53,219 +39,278 @@
   background-color: @syntax-selection-color;
 }
 
-.editor.is-focused, .editor.is-focused  {
-  background-color: lighten(@syntax-background-color, 2%);
-}
-
-.line.cursor-line, .line-number.cursor-line-no-selection {
-  background-color: #142118;
-}
-
 .meta.class.body, .meta.method.body, .meta.method, .meta.method-call {
-  color: #637d75;
+  color: @white;
 }
 
 .variable.parameter.function {
-  color: #2f7e25;
   text-decoration: underline;
+
+  color: @green;
 }
 
 .comment, .punctuation.definition.comment {
-  color: #3c4711;
+  color: @grey;
 }
 
 .punctuation.definition.string, .punctuation.definition.variable, .punctuation.definition.string, .punctuation.definition.parameters, .punctuation.definition.array, .punctuation.definition.tag, .punctuation.definition.method-parameters {
-  color: #637d75;
+  color: @white;
 }
 
 .punctuation.definition.seperator.key-value, .punctuation.terminator {
-  color: #00a9df;
+  color: @bright-blue;
 }
 
 .punctuation.definition.structure {
-  color: #18e000;
+  color: @bright-green;
 }
 
 .none {
-  color: #637d75;
+  color: @white;
 }
 
 .keyword.operator {
-  color: #637d75;
+  color: @white;
 }
 
 .keyword, .keyword.control {
-  color: #637d75;
+  color: @white;
 }
 
 .variable, .meta.definition.variable.name {
-  color: #2f7e25;
+  color: @green;
 }
 
-.entity.name.function, .meta.require, .support.function.any-method {
-  color: #18e000;
+.entity.name.function, .meta.require {
+  color: @bright-green;
 }
 
 .meta.class, .support.class, .entity.name.class, .entity.name.type.class, .storage.type, .storage.type, .entity.other.inherited-class {
-  color: #18e000;
+  color: @bright-green;
 }
 
 span.storage.modifier.static.groovy + span, span.storage.type.def.groovy + span, span.storage.type.groovy + span {
-    .meta.method.groovy {
-        color: #18e000;
-    }
+  .meta.method.groovy {
+    color: @bright-green;
+  }
 }
 
 span.meta.method-call.groovy {
-    color: #2f7e25;
+    color: @green;
 }
 
 .storage.type.annotation {
-  color: #73f990;
+  color: @bright-white;
 }
 
 .keyword.other.special-method {
-  color: #637d75;
+  color: @white;
 }
 
 .storage, .storage.type.def {
-  color: #47577e;
+  color: @magenta;
 }
 
 .storage.modifier.import, .storage.modifier.package {
-  color: #637d75;
+  color: @white;
 }
 
 .support.function {
-  color: #317f76;
+  color: @cyan;
 }
 
 .string, .punctuation.definition.string {
-  color: #bde000;
-  background-color: #000000;
+  color: @bright-yellow;
+  background-color: @true-black;
 }
 
 .constant.numeric {
-  color: #0058df;
+  color: @bright-magenta;
 }
 
 .none {
-  color: #0058df;
+  color: @bright-magenta;
 }
 
 .none {
-  color: #73f990;
+  color: @bright-white;
 }
 
 .constant.language {
-  color: #637d75;
+  color: @white;
 }
 
 .constant.other.groovy, .constant.other.java, .constant.variable.groovy, .constant.variable.java  {
   text-decoration: underline;
-  color: #df8008;
+
+  color: @bright-red;
 }
 
 .constant.other.key {
-  color: #637d75;
+  color: @white;
 }
 
 .entity.name.tag {
-  color: #47577e;
+  color: @magenta;
 }
 
 .entity.other.attribute-name {
-  color: #2f7e25;
+  color: @green;
 }
 
-.entity.other.attribute-name.id, .punctuation.definition.entity {
-  color: #00dfc3;
+.entity.other.attribute-name.class.css, .punctuation.definition.entity {
+  color: @bright-cyan;
 }
 
 .meta.selector {
-  color: #47577e;
+  color: @magenta;
 }
 
 .none {
-  color: #73f990;
+  color: @bright-white;
 }
 
 .markup.heading .punctuation.definition.heading, .entity.name.section {
-  color: #00dfc3;
+  color: @bright-cyan;
 }
 
 .keyword.other.unit {
-  color: #00a9df;
+  color: @bright-blue;
 }
 
 .markup.bold, .punctuation.definition.bold {
+  color: @bright-green;
+
   font-weight: bold;
-  color: #18e000;
 }
 
 .markup.italic, .punctuation.definition.italic {
+  color: @magenta;
+
   font-style: italic;
-  color: #47577e;
 }
 
 .markup.raw.inline {
-  color: #bde000;
+  color: @bright-yellow;
 }
 
 .string.other.link {
-  color: #47577e;
+  color: @magenta;
 }
 
 .meta.link {
-  color: #73f990;
+  color: @bright-white;
 }
 
 .markup.list {
-  color: #47577e;
+  color: @magenta;
 }
 
 .markup.quote {
-  color: #73f990;
+  color: @bright-white;
 }
 
 .meta.separator {
-  color: #637d75;
-  background-color: #1D4125;
+  color: @white;
+  background-color: @dark-green;
 }
 
 .markup.inserted {
-  color: #bde000;
+  color: @bright-yellow;
 }
 
 .markup.deleted {
-  color: #47577e;
+  color: @magenta;
 }
 
 .markup.changed {
-  color: #47577e;
+  color: @magenta;
 }
 
 .constant.other.color {
-  color: #df8008;
+  color: @bright-red;
 }
 
 .string.regexp {
-  color: #317f76;
+  color: @cyan;
 }
 
 .constant.character.escape {
-  color: #707f23;
+  color: @yellow;
 }
 
 .punctuation.section.embedded, .variable.interpolation, .punctuation.definition.seperator.parameter.groovy {
-  color: #637d75;
+  color: @white;
 }
 
 .meta.structure.groovy {
-    color: #2f7e25;
+  color: @green;
+}
+
+span.source.css.less {
+    color: @white;
+}
+
+span.support.function.any-method.builtin.less {
+    color: @bright-green;
+}
+
+span.variable.other.less {
+    color: @green;
+}
+
+span.variable.other.less + span.variable.other.less {
+    color: @white;
+}
+
+span.support.function.any-method.builtin.less {
+    color: @bright-green;
+}
+
+.support.type.property-name.css {
+    color: @green;
+}
+
+.support.type.property-name.css + span.variable.other.less {
+    color: @white;
+}
+
+.meta.brace.curly.less {
+    color: @white;
+}
+
+.meta.brace.round.less {
+    color: @white;
+}
+
+.entity.other.attribute-name.class.css {
+    color: @magenta;
+}
+
+.keyword.control.html.elements {
+    color: @magenta;
+}
+
+.keyword.other.unit.css {
+    color: @bright-blue;
+}
+
+span.storage.modifier.static + span.meta.definition.variable.name {
+    color: @bright-red
+}
+
+span.storage.modifier.static + span + span.meta.definition.variable.name {
+    color: @bright-red
+}
+
+span.storage.modifier.static + span.meta.method-call {
+    span.meta.method {
+        color: @bright-green;
+        text-decoration: underline;
+    }
 }
 
 .invalid.illegal {
-  color: #0f160f;
-  background-color: #7f2b26;
+    color: @black;
+    background-color: @red;
 }
